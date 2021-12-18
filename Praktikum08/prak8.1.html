@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prak 8.1</title>
+  <script>
+	function hitungluas(){
+	jari2=document.getElementById("jari2").value;
+	keliling=(2*22/7)*jari2;
+	luas=(jari2*jari2)*3.14;
+	document.getElementById("keliling").value=keliling;
+	document.getElementById("luas").value=luas;
+	}
+
+  </script>
+  </head>
+  <body>
+	<form>
+	<h4>Menghitung Luas dan Keliling Lingkaran</h4>
+	<table>
+	<tr>
+		<td>Jari-Jari</td>
+		<td>:</td>
+		<td><input type="text" id="jari2" name="jari2"></td>
+	</tr>
+	<tr>
+		<td>Keliling</td>
+		<td>:</td>
+		<td><input type="text" id="keliling" name="keliling" disabled="true" size="5"></td>
+	</tr>
+		<tr>
+		<td>Luas</td>
+		<td>:</td>
+		<td><input type="text" id="luas" name="luas" disabled="true" size="5"></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><input type="button" value="hitung" onclick="hitungluas()"></td>
+		
+	</form>
+  </body>
+</html>

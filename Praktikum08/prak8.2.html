@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Menghitung Kurs Rupiah</title>
+        <script>
+            function kurs() {
+                let dollar = parseFloat(document.inputdata.uang.value);
+                if(isNaN(dollar)) {
+                    dollar=0.0;
+                }
+                let hasil = dollar*14650;
+                alert("Jadi, Rupiahnya senilai : Rp."+ hasil);
+            }
+        </script>
+    </head>
+    <body>
+        <form name="inputdata">
+            <h3>
+                Jumlah Dollar = <input type="text" name="uang" />
+            </h3>
+            <input type="button" value="Hitung Kurs" onclick="kurs()" />
+            <input type="reset" value="Reset" />
+        </form>
+    </body>
+</html>
